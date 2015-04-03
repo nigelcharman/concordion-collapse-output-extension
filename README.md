@@ -25,3 +25,7 @@ public class Fixture {
 
 }
 ```
+
+# Test Output
+
+http://carlo-mr.github.io/concordion-collapse-output-extension/spec/spec/concordion/ext/collapse/Collapse.html
