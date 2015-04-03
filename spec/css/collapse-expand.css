@@ -1,0 +1,12 @@
+.collapsible {
+    border: 1px solid grey;
+    padding: 5px;
+    overflow:hidden;
+    background-color: #f2f2f2;
+    transition:height 0.5s; /* Animation time */
+    -webkit-transition:height 0.5s; /* For Safari */
+}
+/* 
+.toggle:hover {
+    height: 100%;
+} */
