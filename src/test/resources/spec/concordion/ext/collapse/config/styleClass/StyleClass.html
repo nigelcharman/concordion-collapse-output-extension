@@ -1,0 +1,52 @@
+<!--
+Copyright (c) 2015 Carlo M-R
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+ -->
+<html xmlns:concordion="http://www.concordion.org/2007/concordion" xmlns:cx="urn:concordion-extensions:2010">
+<link href="../../../../concordion.css" rel="stylesheet" type="text/css" />
+<body>
+
+<h1>Set style class</h1>
+
+<p>The default style class used to find collapsible elements is <b>collapsible</b>. This can be specified when using the configuring the extension.</p>
+
+<div class="example">
+  <h2>Examples</h2>
+  
+  <p>For these examples the extension is configured to use the className: <b>myCustomClass</b>. </p>
+
+  <p>Given the spec reads like this: </p>
+
+  <pre concordion:set="#snippet">&lt;div id="id" class="myCustomClass"&gt;This should be collapsible.&lt;/div&gt;</pre>
+
+  <p>When <span concordion:execute="#fragment=render(#snippet)">run</span> the output is enhanced with the needed code for the collapse feature:</p>
+  
+        <pre class="html" concordion:assertEquals="#fragment">&lt;div class="toggleContainer"&gt;
+    &lt;a href="javascript:collapseExpand('id');"&gt;Expand / Collapse&lt;/a&gt;
+    &lt;div id="id" class="myCustomClass" collapsed-height="1.5" collapsed-height-unit="em" style="height: 1.5em;"&gt;This should be collapsible.&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+  <p>Given spec reads like this:</p>
+
+  <pre concordion:set="#snippet">&lt;div id="id" class="collapsible"&gt;This should not be collapsible.&lt;/div&gt;</pre>
+
+  <p>When <span concordion:execute="#fragment=render(#snippet)">run</span> it stays untouched:</p>
+
+<pre class="html" concordion:assertEquals="#fragment">&lt;div id="id" class="collapsible"&gt;This should not be collapsible.&lt;/div&gt;</pre>
+
+
+</div>
+
+</body>
+</html>
