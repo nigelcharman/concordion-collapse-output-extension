@@ -10,9 +10,9 @@ If you have parts of the specification (e.g. test pre-requisites/setup parts) wh
 # Usage
 
 1. Add the style class to the element.
-  ```html
+```html
 <div id="id" class="collapsible">This should be collapsible.</div>
-  ```
+```
   
 2. Add the CollapseOutputExtension to your fixture
 
