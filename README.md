@@ -2,7 +2,6 @@
 
 This [Concordion](http://www.concordion.org) extension allows to specify that parts of the specification should be collapsible in the result page.
 
-A [demo project](http://github.com/carlo-mr/concordion-collapse-output-extension-demo) which demonstrates this extension is currently in the works.
 
 # Introduction
 
@@ -26,6 +25,6 @@ public class Fixture {
 }
 ```
 
-# Test Output
+A live example can be found [here](http://carlo-mr.github.io/concordion-collapse-output-extension/spec/spec/concordion/ext/collapse/usage/Usage.html)
 
-http://carlo-mr.github.io/concordion-collapse-output-extension/spec/spec/concordion/ext/collapse/Collapse.html
+# [Test Output](http://carlo-mr.github.io/concordion-collapse-output-extension/spec/spec/concordion/ext/collapse/Collapse.html)
