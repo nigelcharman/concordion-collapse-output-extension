@@ -13,6 +13,8 @@ public class DummyCollapseExtensionFactory implements ConcordionExtensionFactory
 	private static String jsDir = null;
 	
 	private static String cssDir = null;
+
+	private static String linkText = null;
     
     public static void setStyleClass(String styleClass) {
     	DummyCollapseExtensionFactory.styleClass = styleClass;
@@ -34,6 +36,10 @@ public class DummyCollapseExtensionFactory implements ConcordionExtensionFactory
     		collapseOutputExtension.withCSSOutputDirectory(DummyCollapseExtensionFactory.cssDir);
     	}
     	
+    	if(DummyCollapseExtensionFactory.linkText != null) {
+    		collapseOutputExtension.withLinkText(linkText);
+    	}
+    	
     	return collapseOutputExtension;
     }
 
@@ -44,6 +50,11 @@ public class DummyCollapseExtensionFactory implements ConcordionExtensionFactory
 
 	public static void setCSSOutputDirectory(String cssDir) {
 		DummyCollapseExtensionFactory.cssDir = cssDir;
+		
+	}
+
+	public static void setLinkText(String linkText) {
+		DummyCollapseExtensionFactory.linkText  = linkText;
 		
 	}
 }
