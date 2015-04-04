@@ -1,6 +1,7 @@
 package spec.concordion.ext.collapse.config.styleClass;
 
 import org.concordion.integration.junit4.ConcordionRunner;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 
@@ -17,5 +18,9 @@ public class StyleClassFixture extends AbstractCollapseFixture {
 		
 		DummyCollapseExtensionFactory.setStyleClass("myCustomClass");
 	}
-
+	
+	@After
+	public void resetExtensionFactory() {
+		DummyCollapseExtensionFactory.setStyleClass(null);
+	}
 }
