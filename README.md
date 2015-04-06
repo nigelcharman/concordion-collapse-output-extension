@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/carlo-mr/concordion-collapse-output-extension.svg?branch=master)](https://travis-ci.org/carlo-mr/concordion-collapse-output-extension)
+[![Build Status](https://travis-ci.org/concordion/concordion-collapse-output-extension.svg?branch=master)](https://travis-ci.org/concordion/concordion-collapse-output-extension)
 
 This [Concordion](http://www.concordion.org) extension allows to specify that parts of the specification should be collapsible in the result page.
 
@@ -25,6 +25,6 @@ public class Fixture {
 }
 ```
 
-A live example can be found [here](http://carlo-mr.github.io/concordion-collapse-output-extension/spec/spec/concordion/ext/collapse/usage/Usage.html)
+A live example can be found [here](http://concordion.github.io/concordion-collapse-output-extension/spec/spec/concordion/ext/collapse/usage/Usage.html)
 
-# [Test Output](http://carlo-mr.github.io/concordion-collapse-output-extension/spec/spec/concordion/ext/collapse/Collapse.html)
+# [Test Output](http://concordion.github.io/concordion-collapse-output-extension/spec/spec/concordion/ext/collapse/Collapse.html)
