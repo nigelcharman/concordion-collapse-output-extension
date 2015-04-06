@@ -17,7 +17,6 @@ If you have parts of the specification (e.g. test pre-requisites/setup parts) wh
 2. Add the CollapseOutputExtension to your fixture
 
 ```code
-
 @RunWith(ConcordionRunner.class)
 @Extensions(CollapseOutputExtension.class)
 public class Fixture {
