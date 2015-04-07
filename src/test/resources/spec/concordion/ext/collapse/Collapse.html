@@ -36,7 +36,7 @@ It does so by wrapping the element in a container and adding a link on top of th
   <p>When <span concordion:execute="#fragment=render(#snippet)">run</span> with a fixture that sets the name to "Frank", it becomes:</p>
 
         <pre class="html" concordion:assertEquals="#fragment">&lt;div class="toggleContainer"&gt;
-    &lt;a href="javascript:collapseExpand('id');"&gt;Expand / Collapse&lt;/a&gt;
+    &lt;a href="javascript:Collapsible.collapseExpand('id');"&gt;Expand / Collapse&lt;/a&gt;
     &lt;div id="id" class="collapsible" collapsed-height="1.5" collapsed-height-unit="em" style="height: 1.5em;"&gt;This should be collapsible.&lt;/div&gt;
 &lt;/div&gt;</pre>
 
