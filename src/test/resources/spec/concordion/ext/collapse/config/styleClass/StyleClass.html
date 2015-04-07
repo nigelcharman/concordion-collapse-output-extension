@@ -33,7 +33,7 @@ limitations under the License.
   <p>When <span concordion:execute="#fragment=render(#snippet)">run</span> the output is enhanced with the needed code for the collapse feature:</p>
   
         <pre class="html" concordion:assertEquals="#fragment">&lt;div class="toggleContainer"&gt;
-    &lt;a href="javascript:collapseExpand('id');"&gt;Expand / Collapse&lt;/a&gt;
+    &lt;a href="javascript:Collapsible.collapseExpand('id');"&gt;Expand / Collapse&lt;/a&gt;
     &lt;div id="id" class="myCustomClass" collapsed-height="1.5" collapsed-height-unit="em" style="height: 1.5em;"&gt;This should be collapsible.&lt;/div&gt;
 &lt;/div&gt;</pre>
 

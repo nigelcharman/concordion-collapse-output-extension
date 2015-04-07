@@ -29,7 +29,7 @@ limitations under the License.
 
   <p>When <span concordion:execute="#fragment=renderAndRetriveJavascriptCall(#snippet)">run</span> the id is passed as parameter to the javascript function:</p>
 
-  <pre class="html" concordion:assertEquals="#fragment">javascript:collapseExpand('id');</pre>
+  <pre class="html" concordion:assertEquals="#fragment">javascript:Collapsible.collapseExpand('id');</pre>
 </div>
 
 <div class="example">
@@ -42,7 +42,7 @@ limitations under the License.
   <p>When <span concordion:execute="#fragment=render(#snippet)">run</span> an id is generated and used as parameter to the javascript function:</p>
 
   <pre class="html" concordion:assertEquals="#fragment">&lt;div class="toggleContainer"&gt;
-    &lt;a href="javascript:collapseExpand('1409716573');"&gt;Expand / Collapse&lt;/a&gt;
+    &lt;a href="javascript:Collapsible.collapseExpand('1409716573');"&gt;Expand / Collapse&lt;/a&gt;
     &lt;div class="collapsible" id="1409716573" collapsed-height="1.5" collapsed-height-unit="em" style="height: 1.5em;"&gt;This should be collapsible. With a generated id on the element.&lt;/div&gt;
 &lt;/div&gt;
 </pre>
