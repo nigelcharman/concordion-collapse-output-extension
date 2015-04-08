@@ -30,7 +30,7 @@ public class CollapseOutputDocumentParsingListener implements DocumentParsingLis
 	}
 
 	private String buildXpath() {
-		return "//*[@class='" + className + "']";
+		return String.format("//*[@class='%s']", className);
 	}
 
 	private void createToogleContainer(Element element) {
@@ -45,7 +45,7 @@ public class CollapseOutputDocumentParsingListener implements DocumentParsingLis
 		
 		
 		Element link = new Element("a");
-		link.addAttribute(new Attribute("href", "javascript:collapseExpand('" + id + "');"));
+		link.addAttribute(new Attribute("href", String.format("javascript:Collapsible.collapseExpand('%s');", id)));
 
 		link.appendChild(linkText);
 		
@@ -56,10 +56,10 @@ public class CollapseOutputDocumentParsingListener implements DocumentParsingLis
 	}
 
 	/**
-	 * Check if the id attribute on the element is present. 
+	 * Check if the id attribute on the element is present.
 	 * If yes  return it for usage in the javascript function
 	 * If not create and set an id attribute using the hashCode of the elements value.
-	 * 
+	 *
 	 * @param element
 	 * @return id of the element
 	 */
