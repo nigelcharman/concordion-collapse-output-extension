@@ -29,10 +29,6 @@ githubPages {
 	}
 }
 
-release { // workaround for https://github.com/researchgate/gradle-release/issues/83
-    failOnCommitNeeded = false
-}
-
 test.dependsOn cleanTest
 test {
 	systemProperties['concordion.output.dir'] = "$reporting.baseDir/spec"
