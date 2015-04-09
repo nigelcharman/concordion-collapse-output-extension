@@ -15,7 +15,7 @@ ext {
 }
 
 githubPages {
-	repoUri = 'git@github.com:nigelcharman/concordion-collapse-output-extension.git'
+	repoUri = 'git@github.com:concordion/concordion-collapse-output-extension.git'
 	pages {
 		from 'docs'
 
@@ -27,6 +27,10 @@ githubPages {
 			into 'api'
 		}
 	}
+}
+
+release { // workaround for https://github.com/researchgate/gradle-release/issues/83
+    failOnCommitNeeded = false
 }
 
 test.dependsOn cleanTest
